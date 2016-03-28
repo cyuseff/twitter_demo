@@ -1,0 +1,53 @@
+body {
+  height: 100%; }
+
+.twitts-header {
+  margin: 0 !important; }
+  .twitts-header .twitts-header-img {
+    width: 60px; }
+  .twitts-header .twitts-header-h3 {
+    margin: 10px 0 0 0; }
+    .twitts-header .twitts-header-h3 a, .twitts-header .twitts-header-h3 a:hover {
+      color: #333; }
+  .twitts-header .twitts-header-a, .twitts-header .twitts-header-a:hover {
+    color: #777; }
+
+.twitts-list-container {
+  position: absolute;
+  top: 70px;
+  bottom: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  border: solid 1px #DDD; }
+  .twitts-list-container .twitts-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none; }
+    .twitts-list-container .twitts-list > li {
+      padding: 15px 20px;
+      border-bottom: solid 1px #EEE; }
+      .twitts-list-container .twitts-list > li:last-child {
+        border: 0; }
+      .twitts-list-container .twitts-list > li .twitt-avatar {
+        border-radius: 3px; }
+
+.media {
+  margin-top: 5px; }
+
+.fa-spin {
+  -webkit-animation: fa-spin .5s infinite linear;
+  animation: fa-spin .5s infinite linear; }
+
+.twitts-loader {
+  float: right;
+  opacity: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  -webkit-transition-delay: .5s;
+  transition-delay: .5s; }
+  .twitts-loader.active {
+    -webkit-transition: all 0s;
+    transition: all 0s;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    opacity: 1; }

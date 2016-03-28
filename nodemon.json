@@ -1,0 +1,7 @@
+{
+  "ignore": ["app_client/", "node_modules/", "gulpfile.js"],
+  "events": {
+    "restart": "osascript -e 'display notification \"App restarted due to:\n'$FILENAME'\" with title \"nodemon\"'"
+  },
+  "watch": ["*.*"]
+}
